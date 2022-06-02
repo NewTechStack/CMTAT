@@ -1,9 +1,9 @@
 pragma solidity ^0.8.2;
 
-import "../../openzeppelin-contracts-upgradeable/contracts/utils/ContextUpgradeable.sol";
-import "../../openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol";
-import "../../openzeppelin-contracts-upgradeable/contracts/token/ERC20/ERC20Upgradeable.sol";
-import "../../openzeppelin-contracts-upgradeable/contracts/utils/ArraysUpgradeable.sol";
+import "../../import/openzeppelin-contracts-upgradeable/contracts/utils/ContextUpgradeable.sol";
+import "../../import/openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol";
+import "../../import/openzeppelin-contracts-upgradeable/contracts/token/ERC20/ERC20Upgradeable.sol";
+import "../../import/openzeppelin-contracts-upgradeable/contracts/utils/ArraysUpgradeable.sol";
 
 /**
  * @dev Snapshot module.
@@ -21,7 +21,7 @@ abstract contract SnapshotModule is Initializable, ContextUpgradeable, ERC20Upgr
     uint256[] ids;
     uint256[] values;
   }
-  
+
   bytes32 public constant SNAPSHOOTER_ROLE = keccak256("SNAPSHOOTER_ROLE");
   mapping(address => Snapshots) private _accountBalanceSnapshots;
   Snapshots private _totalSupplySnapshots;
@@ -213,6 +213,6 @@ abstract contract SnapshotModule is Initializable, ContextUpgradeable, ERC20Upgr
     _scheduledSnapshots[index] = _scheduledSnapshots[_scheduledSnapshots.length-1];
     _scheduledSnapshots.pop();
   }
-  
+
   uint256[50] private __gap;
 }

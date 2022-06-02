@@ -1,8 +1,8 @@
 pragma solidity ^0.8.2;
 
-import "../../openzeppelin-contracts-upgradeable/contracts/utils/ContextUpgradeable.sol";
-import "../../openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol";
-import "../../openzeppelin-contracts-upgradeable/contracts/token/ERC20/ERC20Upgradeable.sol";
+import "../../import/openzeppelin-contracts-upgradeable/contracts/utils/ContextUpgradeable.sol";
+import "../../import/openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol";
+import "../../import/openzeppelin-contracts-upgradeable/contracts/token/ERC20/ERC20Upgradeable.sol";
 
 /**
  * @dev Enforcement module.

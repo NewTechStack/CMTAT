@@ -1,8 +1,8 @@
 pragma solidity ^0.8.2;
 
 // required OZ imports here
-import "../openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol";
-import "../openzeppelin-contracts-upgradeable/contracts/utils/ContextUpgradeable.sol";
+import "../import/openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol";
+import "../import/openzeppelin-contracts-upgradeable/contracts/utils/ContextUpgradeable.sol";
 import "./modules/BaseModule.sol";
 import "./modules/AuthorizationModule.sol";
 import "./modules/BurnModule.sol";
@@ -128,7 +128,7 @@ contract CMTAT is Initializable, ContextUpgradeable, BaseModule, AuthorizationMo
     return _unfreeze(account);
   }
 
-  function decimals() public view virtual override(ERC20Upgradeable, BaseModule) returns (uint8) { 
+  function decimals() public view virtual override(ERC20Upgradeable, BaseModule) returns (uint8) {
     return super.decimals();
   }
 
@@ -168,7 +168,7 @@ contract CMTAT is Initializable, ContextUpgradeable, BaseModule, AuthorizationMo
       return TEXT_TRANSFER_REJECTED_FROZEN;
     } else if (address(ruleEngine) != address(0)) {
       return _messageForTransferRestriction(restrictionCode);
-    } 
+    }
   }
 
   function scheduleSnapshot (uint256 time) public onlyRole(SNAPSHOOTER_ROLE) returns (uint256) {
