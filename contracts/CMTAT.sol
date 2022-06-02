@@ -1,8 +1,8 @@
 pragma solidity ^0.8.2;
 
 // required OZ imports here
-import "../import/openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol";
-import "../import/openzeppelin-contracts-upgradeable/contracts/utils/ContextUpgradeable.sol";
+import "../openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol";
+import "../openzeppelin-contracts-upgradeable/contracts/utils/ContextUpgradeable.sol";
 import "./modules/BaseModule.sol";
 import "./modules/AuthorizationModule.sol";
 import "./modules/BurnModule.sol";

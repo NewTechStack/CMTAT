@@ -1,6 +1,6 @@
 pragma solidity ^0.8.2;
 
-import "../../import/openzeppelin-contracts-upgradeable/contracts/metatx/ERC2771ContextUpgradeable.sol";
+import "../../openzeppelin-contracts-upgradeable/contracts/metatx/ERC2771ContextUpgradeable.sol";
 
 
 /**

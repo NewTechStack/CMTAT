@@ -1,6 +1,6 @@
 pragma solidity ^0.8.2;
 
-import "../../import/openzeppelin-contracts-upgradeable/contracts/metatx/MinimalForwarderUpgradeable.sol";
+import "../../openzeppelin-contracts-upgradeable/contracts/metatx/MinimalForwarderUpgradeable.sol";
 
 contract MinimalForwarderMock is MinimalForwarderUpgradeable {
   function initialize() public initializer {

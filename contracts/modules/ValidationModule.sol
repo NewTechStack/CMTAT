@@ -1,7 +1,7 @@
 pragma solidity ^0.8.2;
 
-import "../../import/openzeppelin-contracts-upgradeable/contracts/utils/ContextUpgradeable.sol";
-import "../../import/openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol";
+import "../../openzeppelin-contracts-upgradeable/contracts/utils/ContextUpgradeable.sol";
+import "../../openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol";
 import "../interfaces/IRuleEngine.sol";
 
 
