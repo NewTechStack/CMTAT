@@ -1,4 +1,4 @@
-pragma solidity ^0.8.2;
+pragma solidity ^0.8.14;
 
 // required OZ imports here
 import "../openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol";
